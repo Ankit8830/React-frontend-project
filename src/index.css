@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #fff;
+}
+/* nav link css start */
+ul li a:hover{
+    font-weight: bold;
+}
+.nav-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fdc221;
+    transition: width .3s;
+}
+/* nav link css end */
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* two cols css start
+h1 span .business::after{
+ content: ' ';
+ display: block;
+ width: 0;
+ height: 5px;
+ background: #fdc221;
+ transition: width 0.5ms;
+}
+h1 span .business:hover::after{
+    width: 100%;
+} */
+
+/* two cols css end */
+.text-bg{
+  background: linear-gradient(#fdc221, #fdc221) 0 90% / 100% 8px no-repeat;
+}
+.text-bg-lg{
+    background: linear-gradient(#fdc221, #fdc221) 0 80% / 100% 16px no-repeat;
+  }
+
+  right-j{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+  }
+  .email-container{
+    display: flex;
+    gap: 2rem;
+    background-color: #fff;
+    color: #000;
+    /* padding: 5px; */
+  }
+  .email-container>input{
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 5px 0px 5px 8px;
+    text-transform: uppercase;
+  }
+  ::placeholder{
+    color: #fff;
+  }
+
+
+.btn-j{
+    background-color: fff;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  
